@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<style>
+    input{
+  border: none;
+  border-bottom: 2px solid black;
+}
+textarea{
+    border:2px solid black;
+}
+
+input[type = submit],input[type=reset]{
+    background-color:black;
+    height:40px;
+    width:100px;
+    font-size: larger;
+    font-style: oblique;
+    margin-left:100px;
+    margin-right:auto;
+    margin-bottom: 10px;
+    color:azure;
+    border:none;
+    border-radius:45%;
+}
+input[type = submit]:hover, input[type=reset]:hover{
+    background-color: yellow;
+    height:40px;
+    width:100px;
+    color:blue;
+
+}
+main{
+    background-color:bisque;
+    
+}
+main {
+    padding-right: 20px;
+}
+form{
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
+    width:500px;
+}
+</style>
+
+
+<body >
+    
+    <header>
+        <img src="pic.jpg" alt="logo">
+    <h1>POKEMON CENTER</h1>
+    
+    </header>
+
+    <nav>
+    <ul>
+        <li><a href = "index.html" >HomePage</a></li>
+        <li><a href = "about.html" >About</a></li>
+        <li><a href = "Registration.html" >Register</a></li>
+        <li><a href = "login.html" >Login</a></li>
+        <li><a href = "contact.html">Contact</a></li>
+    </ul>
+    </nav>
+
+ <main>
+    <h1 style ="padding-left:20px; padding-top: 20px; font-style: italic;" ><u>Registration Form</u></h1>
+    
+<form name = "register" method = "post">
+
+    User Name: <input  type = "text"/ required>
+</br>
+</br>
+   Password : <input type = "password"/required>
+</br>
+</br>
+  Gender:         <input type = "radio" name = "gender">male
+                  <input type = "radio" name = "gender">Female
+        </br>
+    </br>
+
+    DOB: <input type = "date"/ required>
+    <br/>
+    <br/>
+  Phone number: <input  type = "text"/ required>
+</br>
+</br>
+  Address: <textArea cols = "20" rows="5" ></textArea>
+</br>
+</br>
+Marital Status: <input name = "mar" type = "radio" /> Single
+        <input  name = "mar" type = "radio" />Married
+        <input  name = "mar" type = "radio" />Divorced
+
+<br>
+<br/>
+<input type = "checkbox" required>I agree with the rules and regulations
+<br>
+<br>
+
+<input type ="submit"> <input type = "reset">
+</form>
+
+</main>
+
+<footer>
+    <h3>
+      CopyRights  © Tejaswi Kankanala
+    </h3>
+  </footer>
+</body>
+</html>

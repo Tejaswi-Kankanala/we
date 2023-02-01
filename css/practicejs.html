@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>javascript</h1>
+
+    <button id ="btn" onclick="patterns()">CLICK TO CREATE PATTERNS</button>
+    <script>
+    var num1;
+     num1 =  prompt("Enter a two digit number:");
+     num1 = parseInt(num1);
+     if(num1 % 7 == 0 && num1 % 9 == 0)
+     alert("the number "+num1+"is multiple of both 7  and 9");
+      else if(num1 % 7 == 0)
+     alert("the number "+num1+"is divisible by 7");
+      else if(num1%9 == 0)
+      alert("the number "+num1+"is divisible by 9");
+     else
+     alert("the number "+num1+"is not divisible by 7 and 9");
+    var i = 0;
+    while(i>=0 && i<=30){
+     document.write(i +"<br/>");
+    i = i+1;
+    }
+    i = 0;
+
+    while(i>=0 && i<=30){
+        
+        document.write(i +"</br>");
+    i = i+2;
+    }
+    
+    while(i>=0 && i<=30){
+    document.write(i +"<br/>");
+    i = i+1;
+    if(i  == 28)
+    break;
+    }
+   var sum = 0;
+    for(i =0;i<=30;i++)
+     sum = sum+i;
+     document.write(sum +"<br>");
+
+    sum = 0;
+
+    for(i =1;i<=30;i = i+2){
+        if(sum >= 50)
+        break;
+     sum = sum+i;
+    }
+    document.write(sum+" ");
+    
+    
+
+      //  program to check if the string is palindrome or not
+let string = prompt("Enter string to check for palindromr");
+function isPalindrome(string) {
+
+// find the length of a string
+const len = string.length;
+
+// loop through half of the string
+for (let i = 0; i < len / 2; i++) {
+
+    // check if first and last string are same
+    if (string[i] !== string[len - 1 - i]) {
+        return 'False';
+    }
+}
+return 'True';
+}
+
+//take input
+
+
+//call the function
+let value = isPalindrome(string);
+
+console.log(value);
+
+let string1 = prompt('Enter a string to capitalize: ');
+function capitalize(string1){
+
+    
+let string = string1.split(" ");
+
+for (let i = 0; i < string.length; i++) {
+    string[i] = string[i][0].toUpperCase() + string[i].substr(1);
+}
+
+string1 = string.join(" ");
+console.log(string1);
+}
+        
+capitalize(string1);
+
+function arrayOfMultiples(num,len){
+    var i = 0;
+    var numarray = [];
+    for(i=0;i<len;i++)
+     numarray[i] = num*(i+1);
+
+  return numarray;
+    
+}
+console.log(arrayOfMultiples(3,5));
+
+
+var click_button = document.getElementById("btn");
+
+
+
+function patterns(){
+    var i=0,j=0;
+    k =1;
+    for(i=1;i<=5;i++){
+         for(j=1;j<=i;j++){
+         document.write(k +" ");
+         k = k+1;
+         }
+         document.write("</br>");
+    }
+
+    document.write("<br/>");
+    for(i=1;i<=5;i++){
+         for(j=1;j<=i;j++){
+         document.write(i +" ");
+        
+         }
+         document.write("</br>");
+    }
+    document.write("<br/>");
+    for(i=1;i<=5;i++){
+         for(j=1;j<=i;j++){
+         document.write(j +" ");
+        
+         }
+         document.write("</br>");
+    }
+    document.write("<br/>");
+    
+ 
+    var i, j, k, m = 1;
+for(i=1; i<=5; i++)
+{
+ for(j=5; j>i; j--)
+  document.write("&nbsp;&nbsp;");
+ for(k=1; k<=i; k++){
+  document.write(m +"&nbsp;&nbsp;");
+  m = m+1;
+ }
+ document.write("<br>");
+}
+
+}
+
+</script>
+</body>
+</html>
